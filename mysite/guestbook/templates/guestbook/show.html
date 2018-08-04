@@ -101,20 +101,7 @@
         }
     </style>
 
-
-<form  action="/guestbook/create/"  method="post" style=" padding-left:120px;">
-   
-     {% csrf_token %}
-
-    <div style="padding-left:400px;font-size:30px;">留 言</div>
-    <label>标题:</label> 
-    <input type="text" id="title" name="title" placeholder="标题" ng-model="title" required/> <br/><br/>
-    
-    <textarea id="content" name="content" style="width: 80%;height:338px;" ></textarea>
-
-    <br />
-    <input class="btn btn-info" type="submit" name="save" value="提 交" />
-</form> 
+    {% include 'guestbook/ly.html' %}
     
 {% endblock %}
 
